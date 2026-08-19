@@ -1,11 +1,10 @@
 esphome:
-    name: ${disp_name}
-    #build_path: ./build/${disp_name}-${variant}
-    name_add_mac_suffix: true
-    min_version: 2026.6.0
-    project:
-      name: "enerwize.powerflie"
-      version: "1.1.0"
+  name: ${disp_name}
+  name_add_mac_suffix: true
+  min_version: 2026.6.0
+  project:
+    name: "enerwize.powerflie"
+    version: "1.1.0"
 
 esp32:
   board: nodemcu-32s
@@ -13,7 +12,7 @@ esp32:
     type: esp-idf
 
 preferences:
-    flash_write_interval: 10min
+  flash_write_interval: 10min
 
 wifi:
   # Set up a wifi access point
