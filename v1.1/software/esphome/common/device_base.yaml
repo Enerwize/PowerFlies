@@ -79,12 +79,12 @@ text_sensor:
   - platform: template
     name: "Project"
     lambda: |-
-      return { ESPHOME_PROJECT_NAME };
+      return (ESPHOME_PROJECT_NAME);
 
   - platform: template
     name: "Version"
     lambda: |-
-      return { ESPHOME_PROJECT_VERSION };
+      return (ESPHOME_PROJECT_VERSION);
 
 # Send IP Address to HA.
 # [https://esphome.io/components/text_sensor/wifi_info.html](https://esphome.io/components/text_sensor/wifi_info.html)
