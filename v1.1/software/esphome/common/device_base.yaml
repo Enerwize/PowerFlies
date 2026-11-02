@@ -34,9 +34,11 @@ api:
 # https://esphome.io/components/ota.html
 ota:
   - platform: esphome
+    encryption:
+      allow_plaintext_upload: true
     on_error:
-        then:
-            - button.press: restart_button
+      then:
+        - button.press: restart_button
 
 spi:
   clk_pin: 18
